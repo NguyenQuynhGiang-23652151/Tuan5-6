@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        display: flex;
+        background-color: bisque;
+    }
+    .form-title {
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: #333;
+        font-size: 1cm; 
+    }
+    .form {
+        flex-direction: column;
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        tab-size: 20px;
+    }
+    .form-group {
+        flex-direction: column;
+        display: flex;
+    }
+    input, select {
+        font-size: 1rem;
+        border: 1px solid #664d4d;
+        border-radius: 8px;
+        padding: 10px 14px;
+    }
+    input:focus, select:focus {
+        border-color: #2196f3;
+    }
+    button {
+        background-color: #2196f3;
+        color: white;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        padding: 12px;
+    }
+    button:hover {
+        background-color: #1976d2;
+    }
+    </style>
+</head>
+<body>
+    <p class="form-title">Đăng ký thông tin cá nhân</p>
+    <form action="#" method="post">
+        <label>Họ tên: <input type="text" name="name" required></label><br><br>
+        <label>Email: <input type="email" name="email" required></label><br><br>
+        <label>Số điện thoại: <input type="tel" name="phone" required></label><br><br>
+        <label>Giới tính:
+          <select name="gender">
+            <option value="nam">Nam</option>
+            <option value="nu">Nữ</option>
+            <option value="khac">Khác</option>
+          </select>
+        </label><br><br>
+        <button type="submit">Gửi</button>
+      </form>
+</body>
+</html>
