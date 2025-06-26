@@ -5,72 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* 1. Canh giữa trang (cả chiều ngang và dọc) */
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center; /* Canh giữa ngang */
-  align-items: center; /* Canh giữa dọc */
-  font-family: Arial, sans-serif;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  width: 100%;
-  max-width: 1200px; /* Giới hạn độ rộng */
-}
-
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; /* Để cho phép sắp xếp lại khi màn hình nhỏ */
-}
-
-.image {
-  max-width: 100%;
-  height: auto;
-  margin-right: 20px; /* Khoảng cách giữa ảnh và văn bản */
-  flex-shrink: 0;
-  border-radius: 10px; /* Tạo viền bo cho ảnh */
-}
-
-.text {
-  max-width: 500px; /* Giới hạn độ rộng của text */
-}
-
-h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-/* 2. Media Queries cho màn hình nhỏ */
-@media (max-width: 768px) {
-  .content {
-    flex-direction: column; /* Sắp xếp theo chiều dọc */
-    text-align: center;
-  }
-
-  .image {
-    margin-right: 0;
-    margin-bottom: 20px; /* Thêm khoảng cách dưới ảnh */
-  }
-}
-
-
-   
-  
-
-
+       p{
+            font-size: 30px;
+            font-weight: bold;
+            background-color: aquamarine;
+        }
+        span{
+            font-style: initial;
+        }
+        img{
+            border-radius: 50px;
+            border-color: blueviolet;
+            border-width: 5px;
+            border-style: dotted;
+        }
+        body {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
     </style>
 </head>
 <body>
